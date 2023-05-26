@@ -6,7 +6,7 @@ public class Athlete {
 
 
 
-    ArrayList<int[]> myList = new ArrayList<>();
+    static ArrayList<int[]> gameSymptoms = new ArrayList<>();
     Scanner scan = new Scanner(System.in);
 
     public void inputSymptoms(){
@@ -63,6 +63,14 @@ public class Athlete {
 
         System.out.println(Arrays.toString(symptomArray));
 
+        gameSymptoms.add(symptomArray);
+
+    }
+
+    public void printdata(){
+        for (int i = 0; i < gameSymptoms.size(); i++) {
+            System.out.println(Arrays.toString(gameSymptoms.get(i)));
+        }
     }
 
 }

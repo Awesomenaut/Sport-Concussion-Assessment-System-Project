@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -25,7 +26,8 @@ public class Main {
                     athlete.inputSymptoms();
                     break;
                 case 2:
-                    System.out.println("4. ");
+                    System.out.println("Print All Symptoms");
+                    athlete.printdata();
                     break;
                 case 3:
                     System.out.println("4. Exit");
