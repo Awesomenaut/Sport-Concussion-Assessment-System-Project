@@ -13,10 +13,12 @@ public class Main {
         while(runProgram){
 
             System.out.println("Please select one of the following options:");
+            System.out.println("");
             System.out.println("1. Enter Symptoms");
             System.out.println("2. Display Symptoms Summary");
             System.out.println("3. Am I at Risk?");
             System.out.println("4. Exit");
+            System.out.println("");
             System.out.println("Enter your choice (1-4):");
 
             int userType = Integer.parseInt(scan.nextLine());
@@ -26,8 +28,7 @@ public class Main {
                     athlete.inputSymptoms();
                     break;
                 case 2:
-                    System.out.println("Print All Symptoms");
-                    athlete.printdata();
+                    athlete.symptomSummary();
                     break;
                 case 3:
                     System.out.println("4. Exit");
