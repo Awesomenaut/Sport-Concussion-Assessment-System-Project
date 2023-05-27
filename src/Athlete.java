@@ -92,7 +92,18 @@ public class Athlete {
             System.out.println("The overall rating cannot be calculated as there is only one game inputted or you have selected the first game\r\n");
         }else{
             String overallRating = calculateOverallRating(gameNum);
-            System.out.println("The overall rating for game " + actualGameNum + " and the previous game is: "+ overallRating + "\r\n");
+            System.out.println("The overall rating for game " + actualGameNum + " and the previous game is: "+ overallRating);
+        }
+    }
+
+    public void riskyConditionIndicator(){
+
+        int gameSize = gameSymptoms.size();
+        if (gameSize == 1) {
+            System.out.println("The risk indicator cannot be determined as there is only one game inputted");
+        }else {
+            String overallRating = calculateOverallRating(gameSize - 1);
+            calculateRiskyCondition(overallRating);
         }
     }
 
@@ -141,6 +152,24 @@ public class Athlete {
     public void printData(){
         for (int i = 0; i < gameSymptoms.size(); i++) {
             System.out.println(Arrays.toString(gameSymptoms.get(i)));
+        }
+    }
+
+    public void calculateRiskyCondition(String overallRating){
+
+        String ANSI_RESET = "\u001B[0m";
+        String ANSI_RED_BACKGROUND = "\u001B[41m";
+        String ANSI_GREEN_BACKGROUND = "\u001B[42m";
+        String ANSI_YELLOW_BACKGROUND = "\u001B[43m";
+
+        System.out.println("The following is the Risky Condition indicator :");
+        System.out.println("");
+        if(overallRating.equals("Very Different")){
+            System.out.println(ANSI_RED_BACKGROUND + overallRating.toString() + ANSI_RESET + "\r\n");
+        }else if(overallRating.equals("Unsure")){
+            System.out.println(ANSI_YELLOW_BACKGROUND + overallRating.toString() + ANSI_RESET + "\r\n");
+        }else if(overallRating.equals("No Difference")){
+            System.out.println(ANSI_GREEN_BACKGROUND + overallRating.toString() + ANSI_RESET + "\r\n");
         }
     }
 }

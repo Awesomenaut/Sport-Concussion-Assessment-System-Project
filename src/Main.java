@@ -31,7 +31,7 @@ public class Main {
                     athlete.symptomSummary();
                     break;
                 case 3:
-                    System.out.println("4. Exit");
+                    athlete.riskyConditionIndicator();
                     break;
                 case 4:
                     System.out.println("Exiting Application");
