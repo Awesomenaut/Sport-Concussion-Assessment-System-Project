@@ -11,7 +11,7 @@ public class Athlete {
 
     public void inputSymptoms(){
 
-        int[] symptomArray = new int[3];
+        int[] symptomArray = new int[22];
 
         System.out.println("Please score yourself on the following symptoms on a scale of 0(none) to 6(severe)");
         System.out.println("Headache: ");
@@ -20,44 +20,44 @@ public class Athlete {
         symptomArray[1] = scan.nextInt();
         System.out.println("Neck Pain: ");
         symptomArray[2] = scan.nextInt();
-//        System.out.println("Nausea or Vomiting: ");
-//        symptomArray[3] = scan.nextInt();
-//        System.out.println("Dizziness: ");
-//        symptomArray[4] = scan.nextInt();
-//        System.out.println("Blurred Vision: ");
-//        symptomArray[5] = scan.nextInt();
-//        System.out.println("Balance Problems: ");
-//        symptomArray[6] = scan.nextInt();
-//        System.out.println("Sensitivity to light: ");
-//        symptomArray[7] = scan.nextInt();
-//        System.out.println("Sensitivity to noise: ");
-//        symptomArray[8] = scan.nextInt();
-//        System.out.println("Feeling slowed down: ");
-//        symptomArray[9] = scan.nextInt();
-//        System.out.println("Feeling like in a fog: ");
-//        symptomArray[10] = scan.nextInt();
-//        System.out.println("Don't feel right: ");
-//        symptomArray[11] = scan.nextInt();
-//        System.out.println("Difficulty concentrating: ");
-//        symptomArray[12] = scan.nextInt();
-//        System.out.println("Difficulty Remembering: ");
-//        symptomArray[13] = scan.nextInt();
-//        System.out.println("Fatigue or low energy: ");
-//        symptomArray[14] = scan.nextInt();
-//        System.out.println("Confusion: ");
-//        symptomArray[15] = scan.nextInt();
-//        System.out.println("Drowsiness: ");
-//        symptomArray[16] = scan.nextInt();
-//        System.out.println("Trouble falling asleep: ");
-//        symptomArray[17] = scan.nextInt();
-//        System.out.println("More Emotional: ");
-//        symptomArray[18] = scan.nextInt();
-//        System.out.println("Irritability: ");
-//        symptomArray[19] = scan.nextInt();
-//        System.out.println("Sadness: ");
-//        symptomArray[20] = scan.nextInt();
-//        System.out.println("Nervous or anxious: ");
-//        symptomArray[21] = scan.nextInt();
+        System.out.println("Nausea or Vomiting: ");
+        symptomArray[3] = scan.nextInt();
+        System.out.println("Dizziness: ");
+        symptomArray[4] = scan.nextInt();
+        System.out.println("Blurred Vision: ");
+        symptomArray[5] = scan.nextInt();
+        System.out.println("Balance Problems: ");
+        symptomArray[6] = scan.nextInt();
+        System.out.println("Sensitivity to light: ");
+        symptomArray[7] = scan.nextInt();
+        System.out.println("Sensitivity to noise: ");
+        symptomArray[8] = scan.nextInt();
+        System.out.println("Feeling slowed down: ");
+        symptomArray[9] = scan.nextInt();
+        System.out.println("Feeling like in a fog: ");
+        symptomArray[10] = scan.nextInt();
+        System.out.println("Don't feel right: ");
+        symptomArray[11] = scan.nextInt();
+        System.out.println("Difficulty concentrating: ");
+        symptomArray[12] = scan.nextInt();
+        System.out.println("Difficulty Remembering: ");
+        symptomArray[13] = scan.nextInt();
+        System.out.println("Fatigue or low energy: ");
+        symptomArray[14] = scan.nextInt();
+        System.out.println("Confusion: ");
+        symptomArray[15] = scan.nextInt();
+        System.out.println("Drowsiness: ");
+        symptomArray[16] = scan.nextInt();
+        System.out.println("Trouble falling asleep: ");
+        symptomArray[17] = scan.nextInt();
+        System.out.println("More Emotional: ");
+        symptomArray[18] = scan.nextInt();
+        System.out.println("Irritability: ");
+        symptomArray[19] = scan.nextInt();
+        System.out.println("Sadness: ");
+        symptomArray[20] = scan.nextInt();
+        System.out.println("Nervous or anxious: ");
+        symptomArray[21] = scan.nextInt();
         System.out.println("Thank you!\r\n");
 
 
@@ -164,11 +164,11 @@ public class Athlete {
 
         System.out.println("The following is the Risky Condition indicator :");
         System.out.println("");
-        if(overallRating.equals("Very Different")){
+        if(overallRating.equals("Very different")){
             System.out.println(ANSI_RED_BACKGROUND + overallRating.toString() + ANSI_RESET + "\r\n");
         }else if(overallRating.equals("Unsure")){
             System.out.println(ANSI_YELLOW_BACKGROUND + overallRating.toString() + ANSI_RESET + "\r\n");
-        }else if(overallRating.equals("No Difference")){
+        }else if(overallRating.equals("No difference")){
             System.out.println(ANSI_GREEN_BACKGROUND + overallRating.toString() + ANSI_RESET + "\r\n");
         }
     }
