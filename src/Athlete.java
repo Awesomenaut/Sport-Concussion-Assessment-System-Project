@@ -13,52 +13,51 @@ public class Athlete {
 
         int[] symptomArray = new int[22];
 
-        System.out.println("Please score yourself on the following symptoms on a scale of 0(none) to 6(severe)");
-        System.out.println("Headache: ");
+        System.out.println("Please enter your headache score: ");
         symptomArray[0] = scan.nextInt();
-        System.out.println("Pressure in head: ");
+        System.out.println("Please enter your pressure in head score: ");
         symptomArray[1] = scan.nextInt();
-        System.out.println("Neck Pain: ");
+        System.out.println("Please enter your neck pain score: ");
         symptomArray[2] = scan.nextInt();
-        System.out.println("Nausea or Vomiting: ");
+        System.out.println("Please enter your nausea or vomiting score: ");
         symptomArray[3] = scan.nextInt();
-        System.out.println("Dizziness: ");
+        System.out.println("Please enter your dizziness score: ");
         symptomArray[4] = scan.nextInt();
-        System.out.println("Blurred Vision: ");
+        System.out.println("Please enter your blurred vision score: ");
         symptomArray[5] = scan.nextInt();
-        System.out.println("Balance Problems: ");
+        System.out.println("Please enter your balance problems score: ");
         symptomArray[6] = scan.nextInt();
-        System.out.println("Sensitivity to light: ");
+        System.out.println("Please enter your sensitivity to light score: ");
         symptomArray[7] = scan.nextInt();
-        System.out.println("Sensitivity to noise: ");
+        System.out.println("Please enter your sensitivity to noise score: ");
         symptomArray[8] = scan.nextInt();
-        System.out.println("Feeling slowed down: ");
+        System.out.println("Please enter your feeling slowed down score: ");
         symptomArray[9] = scan.nextInt();
-        System.out.println("Feeling like in a fog: ");
+        System.out.println("Please enter your feeling like in a fog score: ");
         symptomArray[10] = scan.nextInt();
-        System.out.println("Don't feel right: ");
+        System.out.println("Please enter your don't feel right score: ");
         symptomArray[11] = scan.nextInt();
-        System.out.println("Difficulty concentrating: ");
+        System.out.println("Please enter your difficulty concentrating score: ");
         symptomArray[12] = scan.nextInt();
-        System.out.println("Difficulty Remembering: ");
+        System.out.println("Please enter your difficulty remembering score: ");
         symptomArray[13] = scan.nextInt();
-        System.out.println("Fatigue or low energy: ");
+        System.out.println("Please enter your fatigue or low energy score: ");
         symptomArray[14] = scan.nextInt();
-        System.out.println("Confusion: ");
+        System.out.println("Please enter your confusion score: ");
         symptomArray[15] = scan.nextInt();
-        System.out.println("Drowsiness: ");
+        System.out.println("Please enter your drowsiness score: ");
         symptomArray[16] = scan.nextInt();
-        System.out.println("Trouble falling asleep: ");
+        System.out.println("Please enter your trouble falling asleep score: ");
         symptomArray[17] = scan.nextInt();
-        System.out.println("More Emotional: ");
+        System.out.println("Please enter your more emotional score: ");
         symptomArray[18] = scan.nextInt();
-        System.out.println("Irritability: ");
+        System.out.println("Please enter your irritability score: ");
         symptomArray[19] = scan.nextInt();
-        System.out.println("Sadness: ");
+        System.out.println("Please enter your sadness score: ");
         symptomArray[20] = scan.nextInt();
-        System.out.println("Nervous or anxious: ");
+        System.out.println("Please enter your nervous or anxious score: ");
         symptomArray[21] = scan.nextInt();
-        System.out.println("Thank you!\r\n");
+        System.out.println("Done!\r\n");
 
 
         gameSymptoms.add(symptomArray);
@@ -147,12 +146,6 @@ public class Athlete {
             }
         }
         return totalSymptoms;
-    }
-
-    public void printData(){
-        for (int i = 0; i < gameSymptoms.size(); i++) {
-            System.out.println(Arrays.toString(gameSymptoms.get(i)));
-        }
     }
 
     public void calculateRiskyCondition(String overallRating){
